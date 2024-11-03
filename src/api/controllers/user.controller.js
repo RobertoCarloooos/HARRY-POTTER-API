@@ -22,7 +22,7 @@ const register = async (req, res) => {
             } else {
                 return res.status(200).json({
                     success: false,
-                    message: 'La contraseña no cumple con el patron correcto',
+                    message: 'Usa Mayuscula,minuscula,numeros,min 8 cifras',
                 });
             }
         }

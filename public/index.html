@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hogwarts</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a Hogwarts</h1>
+        <nav>
+            <ul>
+                <li><a href="#login">Iniciar Sesión</a></li>
+                <li><a href="#register">Registrarse</a></li>
+                <li><a href="#houses">Casas</a></li>
+                <li><a href="#characters">Personajes</a></li>
+                <li><a href="#profile">Perfil</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="login">
+            <h2>Iniciar Sesión</h2>
+            <form id="loginForm">
+                <input type="email" id="loginEmail" placeholder="Email" required>
+                <input type="password" id="loginPassword" placeholder="Contraseña" required>
+                <button type="submit">Iniciar Sesión</button>
+            </form>
+        </section>
+
+        <section id="register">
+            <h2>Registrarse</h2>
+            <form id="registerForm">
+                <input type="text" id="registerName" placeholder="Nombre" required>
+                <input type="email" id="registerEmail" placeholder="Email" required>
+                <input type="password" id="registerPassword" placeholder="Contraseña" required>
+                <button type="submit">Registrarse</button>
+            </form>
+        </section>
+
+        <section id="houses">
+            <h2>Casas</h2>
+            <div id="housesList"></div>
+        </section>
+
+        <section id="characters">
+            <h2>Personajes</h2>
+            <div id="charactersList"></div>
+        </section>
+
+        <section id="profile">
+            <h2>Perfil</h2>
+            <form id="profileForm">
+                <input type="text" id="profileName" placeholder="Nombre" required>
+                <input type="email" id="profileEmail" placeholder="Email" required>
+                <input type="password" id="profilePassword" placeholder="Contraseña" required>
+                <button type="submit">Actualizar Perfil</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
